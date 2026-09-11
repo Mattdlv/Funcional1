@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F6F1E7"/>
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#B79658" stroke-width="1.5"/>
+  <path d="M180 300c40-70 40-130 0-190-40 60-40 120 0 190Z" fill="#93A37E" opacity="0.55"/>
+  <path d="M1020 330c-40-70-40-130 0-190 40 60 40 120 0 190Z" fill="#93A37E" opacity="0.55"/>
+  <text x="600" y="300" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-size="88" fill="#4C5233">Flor &amp; Mati</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="10" fill="#9C7F5F">04 · 12 · 2026</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#7C6448">Toda la información de nuestra boda</text>
+</svg>
