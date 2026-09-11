@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #fbf7f0;
+  color: #2e2a22;
+  overflow-x: hidden;
+}
+
+/* Textura de papel artesanal muy sutil, generada con SVG en línea (liviano) */
+.paper-texture {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+.section-label {
+  @apply text-xs sm:text-sm tracking-widest2 uppercase text-olive-600 font-sans font-medium;
+}
+
+.section-title {
+  @apply font-display text-3xl sm:text-4xl md:text-5xl text-ink;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-olive-600 px-7 py-3.5 text-sm sm:text-base font-sans font-medium text-ivory tracking-wide transition-all duration-300 hover:bg-olive-700 active:scale-[0.98] min-h-[48px];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-olive-500/60 bg-transparent px-7 py-3.5 text-sm sm:text-base font-sans font-medium text-olive-700 tracking-wide transition-all duration-300 hover:bg-olive-600 hover:text-ivory active:scale-[0.98] min-h-[48px];
+}
+
+.card {
+  @apply rounded-2xl border border-earth-400/20 bg-white/60 backdrop-blur-[2px] shadow-[0_4px_30px_-10px_rgba(76,82,51,0.15)];
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-1.2deg) translateY(0);
+  }
+  50% {
+    transform: rotate(1.2deg) translateY(-3px);
+  }
+}
+
+.animate-sway {
+  animation: sway 7s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+::selection {
+  background-color: #dfe2ca;
+  color: #2e2a22;
+}
